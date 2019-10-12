@@ -1,0 +1,22 @@
+---
+
+  hosts: ngsatpc
+  #gather_facts: false
+
+  # Variable: variables that will apply to the play, on all target systems
+  vars: 
+
+  # Task: the list of tasks that will be executed within the playbook
+  tasks:
+    - name: Install telnet feature
+      win_feature:
+        name: Telnet_Client
+        state: True
+    
+
+
+  # Roles: list of roles to be imported into the play
+
+# Three dots indicate the end of a YAML document
+#ansible-playbook 01tasks.yml.yml
+...
