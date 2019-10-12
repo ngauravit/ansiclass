@@ -10,7 +10,7 @@
   tasks:
     - name: Install telnet feature
       win_feature:
-        name: Telnet_Client
+        name: Telnet-Client
         state: True
     
 
@@ -18,5 +18,5 @@
   # Roles: list of roles to be imported into the play
 
 # Three dots indicate the end of a YAML document
-#ansible-playbook 01tasks.yml.yml
+#ansible-playbook tasks.yml
 ...
