@@ -1,15 +1,14 @@
 ---
-
+-
   hosts: ngsatpc
   #gather_facts: false
 
   # Variable: variables that will apply to the play, on all target systems
-  vars: 
 
   # Task: the list of tasks that will be executed within the playbook
   tasks:
     - name: Install telnet feature
-      win_feature:
+      win_feature: 
         name: Telnet-Client
         state: True
     
