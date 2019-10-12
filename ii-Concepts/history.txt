@@ -1,0 +1,103 @@
+    1  apt install update
+    2  apt-get update
+    3  ifconfig
+    4  apt-get update
+    5  touch file1
+    6  vi file1
+    7  cat file1
+    8  cat /etc/ansible/ansible.cfg
+    9  /etc
+   10  cd /etc
+   11  ls
+   12  ifconfog
+   13  ifconfig
+   14  apt install openssh-server
+   15  cat /etc/apt/sources.list
+   16  cat /etc/ansible/ansible.cfg
+   17  cat /ansible/ansible.cfg
+   18  vi ansible/ansible.cfg
+   19  clear
+   20  ansible ngsatpc -m setup
+   21  vi ansible/host
+   22  cat host
+   23  cat hosts
+   24  cat ansible/hosts
+   25  cat ansible/host
+   26  vi ansible/hosts
+   27  cat ansible/hosts
+   28  ansible ngsatpc -m setup
+   29  vi ansible/hosts
+   30  ansible ngsatpc -m setup
+   31  ansible [windows:vars] -m setup
+   32  ansible windows:vars -m setup
+   33  ansible windows -m setup
+   34  vi ansible/hosts
+   35  ansible win -m setup
+   36  vi /ansible/hosts
+   37  vi ansible/hosts
+   38  ansible win -m setup
+   39  vi ansible/hosts
+   40  ansible win -m setup
+   41  ping ngsatpc
+   42  vi hosts
+   43  ping ngsatpc
+   44  ansible win -m setup
+   45  vi ansible/hosts
+   46* 
+   47  vi ansible/hosts
+   48  ansible win -m setup
+   49  apt install python pip
+   50  apt install python-pip
+   51  ansible win -m setup
+   52  pip install "pywinrm>=0.3.0"
+   53  ansible win -m setup
+   54  ifconfig
+   55  ansible win -m setup
+   56  vi ansible/hosts
+   57* 
+   58  vi ansible/hosts
+   59  ansible win -m setup
+   60  vi ansible/hosts
+   61* 
+   62  vi ansible/hosts
+   63* 
+   64  ansible winNew test.ps1
+   65  ansible winNew -m script test.ps1
+   66  ansible winNew -m script -a test.ps1
+   67  vi test.ps1
+   68  ansible winNew -m script -a test.ps1
+   69* 
+   70  history >>a.txt
+   71  cat a.txt
+   72  ls
+   73  ifconfig
+   74  vi ansible/hosts
+   75  ansible winyml -i ii-Concepts/NGSAT/hosts.yml -m raw mkdir C:\demo123.txt 
+   76  ansible winyml -i ii-Concepts/NGSAT/hosts.yml -m raw -a mkdir C:\demo123.txt 
+   77  ansible winyml -i ii-Concepts/NGSAT/hosts.yml -m raw -a "mkdir C:\demo123.txt" 
+   78  cd ii-Concepts/NGSAT/hosts.yml  
+   79  cd..
+   80  cd.
+   81  cd/
+   82  cd\
+   83  cd.
+   84  cd//
+   85  cd..
+   86  cd...
+   87  cd....\
+   88  cd:
+   89  cd ..
+   90  cd ii-Concepts/NGSAT/hosts.yml  
+   91  cd /ii-Concepts/NGSAT  
+   92  cd ii-Concepts/NGSAT  
+   93  git clone https://github.com/ngauravit/ansiclass.git
+   94  ls
+   95  cd ansiclass/ii-Concepts/NGSAT/
+   96  ld
+   97  ls
+   98  ansible winyml -i hosts.yml -m raw -a "mkdir C:\demo123.txt" 
+   99  ansible winyaml -i hosts.yml -m raw -a "mkdir C:\demo123.txt" 
+  100  ansible winyaml -i hosts.yml -m raw -a "mkdir C:\demo123" 
+  101  history
+  102  cd ..
+  103  history >>history.txt
