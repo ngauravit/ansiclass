@@ -1,6 +1,6 @@
 ---
 servicesneedstodisable:
  - BITS
- - dnscache
+ - Dnscache
  - AnyDesk
 ...
