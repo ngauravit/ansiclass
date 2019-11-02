@@ -1,0 +1,22 @@
+---
+-
+  hosts: all
+  gather_facts: true 
+
+  tasks: 
+    - name: Display all Running Service
+      win_shell: get-services
+      register: servicevar
+      when: Status == "Running" # you can use 'and' / 'or' keywork for multiple condition 
+
+    - name: Show output
+      debug:
+        var: servicevar
+      
+
+# You can use below way as well
+#when: 
+ #       - ansible_distribution == "CentOS" 
+  #      - ansible_distribution_major_version | int >= 7
+
+...
