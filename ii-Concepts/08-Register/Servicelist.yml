@@ -5,13 +5,13 @@
 
   tasks: 
     - name: Display all Running Service
-      win_shell: get-service
+      win_shell: get-service | ConvertTo-Json
       register: servicevar
        
     - name: Show output
       debug:
         var: servicevar
-        when: "{{servicevar.state == 'Running'}}"
+        when: "{{ servicevar.Status | from_json }}" == 'Running'
 
 # You can use below way as well
 #when: 
