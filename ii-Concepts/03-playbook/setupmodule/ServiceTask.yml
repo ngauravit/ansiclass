@@ -13,22 +13,19 @@
   vars_files:
     - Ext_variable.yml
   tasks:
-   - name: Start service BITS, if not started
+   - name: Start service Service,if not started
      win_service:
       name: "{{item}}"
-      loop: 
-         - "{{servicesneedstodisable}}"
-      state :  
-        {% for Serv in "{{servicesneedstodisable}}" -%}   
-            {% if Serv == "BITS" -%}
-             stopped  
-            {% elif Serv == "Windows Audio" -%}
-             started
-            {% else Serv == "Dnscache" -%}
-             started
+      state: >  
+            {% if item == "BITS" -%}
+               stopped  
+            {% elif item == "Windows Audio" -%}
+               started
+            {% else item == "Dnscache" -%}
+               Service not Found
             {% endif %}
-        {% endfor -%}
-    
+        
+     loop: "{{servicesneedstodisable}}"
         
       
             
