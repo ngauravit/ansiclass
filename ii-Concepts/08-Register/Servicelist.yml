@@ -11,7 +11,7 @@
     - name: Show output
       debug:
         var: servicevar
-        when: "{{servicevar.Status == 'Running'}}"
+        when: "{{servicevar.state == 'Running'}}"
 
 # You can use below way as well
 #when: 
