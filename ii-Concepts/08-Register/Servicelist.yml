@@ -5,7 +5,7 @@
 
   tasks: 
     - name: Display all Running Service
-      win_shell: get-services
+      win_shell: get-service
       register: servicevar
        
     - name: Show output
