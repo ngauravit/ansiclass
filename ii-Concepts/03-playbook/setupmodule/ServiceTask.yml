@@ -21,7 +21,9 @@
                stopped  
             {% elif item == "Windows Audio" -%}
                started
-            {% else item == "Dnscache" -%}
+            {% elif item == "Dnscache" -%}
+               started
+            {% else -%}
                Service not Found
             {% endif %}
         
