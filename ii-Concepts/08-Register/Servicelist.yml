@@ -7,7 +7,7 @@
     - name: Display all Running Service
       win_shell: get-services
       register: servicevar
-      when: servicevar.Status == "Running" # you can use 'and' / 'or' keywork for multiple condition 
+      when: "{{servicevar.Status == 'Running'}}" # you can use 'and' / 'or' keywork for multiple condition 
 
     - name: Show output
       debug:
